@@ -1,0 +1,41 @@
+# The graph of at k=4
+# from /home/dell/Desktop/Research_Projects/Github_Projects/SSCE/example/Citeseer/graph.pairs
+# at no lower link weight threshold,
+# and at no upper link weight threshold.
+# Links were treated as undirected.
+# No time limit was set for the clique search.
+# The communities were extracted solely at k=4.
+
+6 31 2
+10 26 2
+11 35 1
+13 32 1
+14 21 1
+14 24 1
+14 25 2
+14 29 3
+14 30 2
+14 32 1
+14 33 1
+14 34 1
+18 20 2
+21 24 1
+21 25 1
+21 30 2
+21 32 1
+21 33 2
+21 34 1
+24 25 1
+24 30 1
+24 33 1
+24 34 1
+25 29 1
+25 30 1
+25 33 1
+25 34 1
+29 34 2
+30 32 2
+30 33 2
+30 34 1
+32 33 1
+33 34 1
