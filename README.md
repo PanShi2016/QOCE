@@ -19,7 +19,8 @@ Before compiling codes, the following software should be installed in your syste
 - Citeseer dataset
 - nodes: 2110, edges: 3668
 - Seven communities with ground truth size >= 10
-## How to run
+## How to run SSCE algorithm
+1. Find all maximal cliques
 ```
 $ cd LLSA_codes 
 $ matlab 
@@ -32,6 +33,7 @@ $ LLSA(k,alpha)
 k: number of Lanczos iteration (default: 4)
 
 alpha: a parameter controls local minimal conductance (default: 1.03)
+## How to run baseline algorithms
 ## Announcements
 ### Licence
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
