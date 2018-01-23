@@ -37,7 +37,7 @@ Please email to panshi@hust.edu.cn or setup an issue if you have any problems or
 
 ### Acknowledgement
 In the program, we incorporate some open source codes as baseline algorithms from the following websites:
-- [BIGCLAM](http://snap.stanford.edu/snap/download.html) codes in the package SNAP 4.0
+- [BIGCLAM](http://snap.stanford.edu/snap/download.html) codes in the SNAP distribution package
 - [CFinder](http://hal.elte.hu/cfinder/wiki/?n=Main.Software)
 - [DEMON](http://www.michelecoscia.com/?page_id=42)
 - [GCE](https://sites.google.com/site/greedycliqueexpansion/)
