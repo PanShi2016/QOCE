@@ -9,17 +9,16 @@ Before compiling codes, the following software should be installed in your syste
 - Amazon dataset (available at http://snap.stanford.edu/data/)
 - Citeseer and Cora refer to (1), Senate refers to (2), and HS as well as SC refer to (3)  
 
- (1) P. Sen, G. Namata, M. Bilgic, L. Getoor, B. Galligher, T. Eliassi-Rad, Collective classification in network data, AI Magazine 29 (3) (2008) 93-106.
+(1) P. Sen, G. Namata, M. Bilgic, L. Getoor, B. Galligher, T. Eliassi-Rad, Collective classification in network data, AI Magazine 29 (3) (2008) 93-106.
 
- (2) D. Gleich, K. Kloster, Seeded pagerank solution paths, European Journal of Applied Mathematics 27 (6) (2016) 812–845.
+(2) D. Gleich, K. Kloster, Seeded pagerank solution paths, European Journal of Applied Mathematics 27 (6) (2016) 812–845.
 
- (3) D. Park, R. Singh, M. Baym, C.-S. Liao, B. Berger, Isobase: a database of functionally related proteins across ppi networks, Nucleic acids research 39 (2010) D295–D300.
+(3) D. Park, R. Singh, M. Baym, C.-S. Liao, B. Berger, Isobase: a database of functionally related proteins across ppi networks, Nucleic acids research 39 (2010) D295–D300.
 
 ### Example dataset
-- Amazon dataset (available at http://snap.stanford.edu/data/com-Amazon.html)
-- nodes: 334863, edges: 925872 
-- nodes are products, edges are co-purchase relationships
-- top 5000 communities with ground truth size >= 3
+- Citeseer dataset
+- nodes: 2110, edges: 3668
+- Seven communities with ground truth size >= 10
 ## How to run
 ```
 $ cd LLSA_codes 
