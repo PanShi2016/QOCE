@@ -30,17 +30,23 @@ $ sh produceMaximumCliques
 ```
 2. Detect communities from maximum cliques
 ```
-$ cd LLSA_codes 
+$ cd SSCE_codes 
 $ matlab 
-$ mex -largeArrayDims GetLocalCond.c   % compile the mex file 
-$ mex -largeArrayDims hkgrow_mex.cpp   % compile the mex file 
-$ LLSA(k,alpha) 
+$ mex -largeArrayDims GetLocalCond_mex.c   % compile the mex file 
+$ mex -largeArrayDims RandomWalk_mex.c     % compile the mex file 
+$ SSCE(k0,k,d,alpha) 
 ```
 ### Command Options:
 
-k: number of Lanczos iteration (default: 4)
+minimumCliqueSize: minimum size of clique (default: 4)
 
-alpha: a parameter controls local minimal conductance (default: 1.03)
+k0: steps of random walk for sampling (default: 4)
+
+k: number of iteration for the subspace (default: 4)
+
+d: dimension of the subspace (default: 2)
+
+alpha: a parameter controls local minimal conductance (default: 1.9)
 ## How to run baseline algorithms
 ## Announcements
 ### Licence
