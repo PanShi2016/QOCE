@@ -1,3 +1,4 @@
+function [] = SSCE(steps,s,d,alpha)
 % test dataset for SSCE algorithm
 
 % steps is the steps of random walk for sampling
