@@ -36,7 +36,7 @@ $ mex -largeArrayDims GetLocalCond_mex.c   % compile the mex file
 $ mex -largeArrayDims RandomWalk_mex.c     % compile the mex file 
 $ SSCE(k0,k,d,alpha) 
 ```
-### Command Options:
+Command Options:
 
 minimumCliqueSize: minimum size of clique (default: 4)
 
