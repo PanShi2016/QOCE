@@ -37,6 +37,4 @@ Please email to panshi@hust.edu.cn or setup an issue if you have any problems or
 
 ### Acknowledgement
 In the program, we incorporate some open source codes as baseline algorithms from the following websites:
-- [LOSP](https://github.com/KunHe2015/LOSP)
-- [HK](https://github.com/kkloste/hkgrow)
-- [PR](https://www.cs.purdue.edu/homes/dgleich/codes/neighborhoods/)
+- [BIGCLAM](http://snap.stanford.edu/snap/download.html)
