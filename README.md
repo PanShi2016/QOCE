@@ -22,6 +22,14 @@ Before compiling codes, the following software should be installed in your syste
 ## How to run SSCE algorithm
 1. Find all maximal cliques
 ```
+$ cd GetMaxCliques
+$ Set the minimum size of clique "minimumCliqueSize" in code called "find_cliques.cpp"
+$ cd build
+$ sh makefile
+$ sh produceMaximumCliques
+```
+2. Detect communities from maximum cliques
+```
 $ cd LLSA_codes 
 $ matlab 
 $ mex -largeArrayDims GetLocalCond.c   % compile the mex file 
