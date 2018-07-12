@@ -1,5 +1,5 @@
-function [] = SSCE(steps,s,d,alpha)
-% test dataset for SSCE algorithm
+function [] = SCE(steps,s,d,alpha)
+% test dataset for SCE algorithm
 
 % steps is the steps of random walk for sampling
 % s is steps of random walk or iteration for subspace
