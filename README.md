@@ -22,7 +22,7 @@ Before compiling codes, the following software should be installed in your syste
 - nodes: 2110, edges: 3668
 - Seven communities with ground truth size >= 10
 
-## How to run SSCE algorithm
+## How to run SCE algorithm
 1. Find all maximal cliques
 ```
 $ cd GetMaxCliques
@@ -33,11 +33,11 @@ $ sh produceMaximumCliques
 ```
 2. Detect communities from maximum cliques
 ```
-$ cd SSCE_codes 
+$ cd SCE_codes 
 $ matlab 
 $ mex -largeArrayDims GetLocalCond_mex.c   % compile the mex file 
 $ mex -largeArrayDims RandomWalk_mex.c     % compile the mex file 
-$ SSCE(k0,k,d,alpha) 
+$ SCE(k0,k,d,alpha) 
 ```
 Command Options:
 
