@@ -1,5 +1,5 @@
-# SSCE
-These codes are for our paper "Spectral Subspace based Clique Expansion for Global Community Detection"
+# SCE
+These codes are for our paper "Spectral based Clique Expansion for Overlapping Community Detection"
 
 ## Requirements
 Before compiling codes, the following software should be installed in your system.
