@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-#编译(只需一次)
+#compile
 g++ -o ./code/run ./code/run.cpp
 
 g++ -o ./algs/BIGCLAM/dataTran ./algs/BIGCLAM/dataTran.cpp
