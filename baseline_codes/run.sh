@@ -1,3 +1,3 @@
 #! /usr/bin/env bash
 
-./code/run citeseer
+./code/run karate

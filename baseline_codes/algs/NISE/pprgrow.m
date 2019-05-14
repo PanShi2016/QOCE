@@ -64,6 +64,10 @@ di=full(max(sum(A(:,vert))));
 %expands = unique(round(logspace(log10(3),log10(p.Results.maxexpand),p.Results.nruns)));
 bestcond = Inf;
 bestset = [];
+bestvol = [];
+bestcut = [];
+bestexpand = [];
+
 for ei=1:numel(expands)
     curexpand = expands(ei)*numel(vert)+di;
     assert(numel(vert)>0);

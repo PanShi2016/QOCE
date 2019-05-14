@@ -1,4 +1,4 @@
-# CFinder was run on links taken from /home/dell/Desktop/Research_Projects/Github_Projects/SSCE/example/Citeseer/graph.pairs
+# CFinder was run on links taken from /home/dell/Desktop/Research_Projects/Github_Projects/QOCE/example/Karate/graph.pairs
 # at no lower link weight threshold,
 # and at no upper link weight threshold.
 # Links were treated as undirected.

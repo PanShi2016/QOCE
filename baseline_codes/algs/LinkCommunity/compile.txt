@@ -1,2 +1,0 @@
-g++ -o calcAndWrite_Jaccards calcAndWrite_Jaccards.cpp
-g++ -o callCluster callCluster.cpp

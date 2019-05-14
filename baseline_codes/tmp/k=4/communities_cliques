@@ -1,44 +1,11 @@
 # The contained cliques in the communities at k=4
-# from /home/dell/Desktop/Research_Projects/Github_Projects/SSCE/example/Citeseer/graph.pairs
+# from /home/dell/Desktop/Research_Projects/Github_Projects/QOCE/example/Karate/graph.pairs
 # at no lower link weight threshold,
 # and at no upper link weight threshold.
 # Links were treated as undirected.
 # No time limit was set for the clique search.
 # The communities were extracted solely at k=4.
 
-0: 125 451 530 531 395 464 465 536 394 537 
-1: 144 
-2: 178 364 
-3: 186 
-4: 188 
-5: 207 
-6: 236 
-7: 247 
-8: 255 
-9: 275 
-10: 276 277 
-11: 306 
-12: 329 330 
-13: 333 334 699 701 610 631 632 642 647 648 657 658 659 673 674 686 691 695 696 700 702 611 612 613 690 629 630 694 646 672 484 688 689 687 685 693 639 645 671 641 
-14: 339 340 558 675 595 597 681 704 677 682 705 348 490 493 496 506 560 678 507 559 683 684 635 633 
-15: 343 
-16: 357 358 
-17: 373 399 
-18: 387 388 
-19: 400 401 
-20: 405 406 
-21: 408 
-22: 426 427 
-23: 437 
-24: 442 
-25: 445 574 576 
-26: 457 
-27: 466 
-28: 469 470 471 472 473 474 475 476 
-29: 500 501 588 590 655 605 607 
-30: 508 509 524 525 
-31: 512 513 569 516 
-32: 519 520 594 
-33: 563 
-34: 600 
-35: 624 
+0: 17 21 
+1: 18 
+2: 20 
