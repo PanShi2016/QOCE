@@ -1,4 +1,4 @@
-function [truthF1,detectedF1,F1] = GetF1score(detectedComm,truthComm)
+function F1 = GetF1score(detectedComm,truthComm)
 % compute F1 score
 
 row1 = length(detectedComm);
@@ -26,3 +26,5 @@ detectedF1 = sum(max(F1Mat'))/row1;
 
 % compute average F1 score
 F1 = (truthF1+detectedF1)/2;
+
+end

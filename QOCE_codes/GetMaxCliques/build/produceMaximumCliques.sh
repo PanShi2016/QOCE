@@ -1,3 +1,3 @@
 #!/bin/bash
 
-./CliqueFinder ../../../example/Citeseer/graph.pairs > ../../../example/Citeseer/seeds.txt
+./CliqueFinder ../../../example/Karate/graph.pairs > ../../../example/Karate/seeds.txt

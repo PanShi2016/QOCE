@@ -10,7 +10,7 @@ SimpleIntGraph theGlobalGraph;
 
 int main(int argc, char **argv){
 	const char *filename = argv[1];
-	int minimumCliqueSize = 4;
+	int minimumCliqueSize = 3;
 
 	if(argc == 3){
 		minimumCliqueSize = atoi(argv[2]);
