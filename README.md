@@ -9,8 +9,7 @@ Before compiling codes, the following software should be installed in your syste
 ## Datasets Information
 - GN benchmark refers to (1)
 - LFR benchmark refers to (2) (available at http://sites.google.com/site/santofortunato/inthepress2/)
-- Karate refers to (3), TerrorAttack and TerroristRel refer to (4),  Polbooks refers to (5), Polblogs refers to (6), Citeseer and Cora refer to (7)
-- Amazon and DBLP refer to (8) (available at http://snap.stanford.edu/data/)
+- Real-world networks: Karate refers to (3), TerrorAttack and TerroristRel refer to (4),  Polbooks refers to (5), Polblogs refers to (6), Citeseer and Cora refer to (7), Amazon and DBLP refer to (8) (available at http://snap.stanford.edu/data/)
 
 (1) M. Girvan and M. E. Newman, “Community structure in social and biological networks,” Proceedings of the National Academy of Sciences, vol. 99, no. 12, pp. 7821–7826, 2002.
 
