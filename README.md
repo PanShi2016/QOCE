@@ -1,5 +1,5 @@
-# SCE
-These codes are for our paper "Spectral based Clique Expansion for Overlapping Community Detection"
+# QOCE
+These codes are for our paper "Quadratic Optimization based Clique Expansion for Overlapping Community Detection"
 
 ## Requirements
 Before compiling codes, the following software should be installed in your system.
@@ -18,11 +18,11 @@ Before compiling codes, the following software should be installed in your syste
 (3) D. Park, R. Singh, M. Baym, C.-S. Liao, B. Berger, Isobase: a database of functionally related proteins across ppi networks, Nucleic acids research 39 (2010) D295–D300.
 
 ### Example dataset
-- Citeseer dataset
-- nodes: 2110, edges: 3668
-- Seven communities with ground truth size >= 10
+- Karate dataset
+- nodes: 34, edges: 78
+- two communities with ground truth size >= 3
 
-## How to run SCE algorithm
+## How to run QOCE algorithm
 1. Find all maximal cliques
 ```
 $ cd GetMaxCliques
@@ -33,23 +33,18 @@ $ sh produceMaximumCliques
 ```
 2. Detect communities from maximum cliques
 ```
-$ cd SCE_codes 
+$ cd QOCE_codes 
 $ matlab 
-$ mex -largeArrayDims GetLocalCond_mex.c   % compile the mex file 
-$ mex -largeArrayDims RandomWalk_mex.c     % compile the mex file 
-$ SCE(k0,k,d,alpha) 
+$ mex -largeArrayDims rwvec_mex.cpp   % compile the mex file 
+$ QOCE(k0,alpha) 
 ```
 Command Options:
 
-minimumCliqueSize: minimum size of clique (default: 4)
+minimumCliqueSize: minimum size of clique (default: 3)
 
-k0: steps of random walk for sampling (default: 4)
+k0: steps of random walk for sampling (default: 3)
 
-k: number of iteration for the subspace (default: 4)
-
-d: dimension of the subspace (default: 2)
-
-alpha: a parameter controls local minimal conductance (default: 1.9)
+alpha: a parameter controls quadratic optimization (default: 0.2)
 
 ## How to run baseline algorithms
 ```
@@ -75,7 +70,4 @@ In the program, we incorporate some open source codes as baseline algorithms fro
 - [BIGCLAM](http://snap.stanford.edu/snap/download.html) codes in the SNAP distribution package
 - [CFinder](http://hal.elte.hu/cfinder/wiki/?n=Main.Software)
 - [DEMON](http://www.michelecoscia.com/?page_id=42)
-- [GCE](https://sites.google.com/site/greedycliqueexpansion/)
-- [LC](https://github.com/bagrow/linkcomm)
 - [NISE](http://lab.icc.skku.ac.kr/~jjwhang/codes/cikm2013/nise.html)
-- [OSLOM](http://www.oslom.org/index.html)
