@@ -7,15 +7,26 @@ Before compiling codes, the following software should be installed in your syste
 - gcc (for Linux and Mac) or Microsoft Visual Studio (for Windows)
 
 ## Datasets Information
-- LFR benchmark graphs (available at http://sites.google.com/site/santofortunato/inthepress2/)
-- Amazon dataset (available at http://snap.stanford.edu/data/)
-- Citeseer and Cora refer to (1), Senate refers to (2), and HS as well as SC refer to (3)  
+- GN benchmark refers to (1)
+- LFR benchmark refers to (2) (available at http://sites.google.com/site/santofortunato/inthepress2/)
+- Karate refers to (3), TerrorAttack and TerroristRel refer to (4),  Polbooks refers to (5), Polblogs refers to (6), Citeseer and Cora refer to (7)
+- Amazon and DBLP refer to (8) (available at http://snap.stanford.edu/data/)
 
-(1) P. Sen, G. Namata, M. Bilgic, L. Getoor, B. Galligher, T. Eliassi-Rad, Collective classification in network data, AI Magazine 29 (3) (2008) 93-106.
+(1) M. Girvan and M. E. Newman, “Community structure in social and biological networks,” Proceedings of the National Academy of Sciences, vol. 99, no. 12, pp. 7821–7826, 2002.
 
-(2) D. Gleich, K. Kloster, Seeded pagerank solution paths, European Journal of Applied Mathematics 27 (6) (2016) 812–845.
+(2) A. Lancichinetti, S. Fortunato, and F. Radicchi, “Benchmark graphs for testing community detection algorithms,” Physical Review E, vol. 78, no. 4, p. 046110, 2008.
 
-(3) D. Park, R. Singh, M. Baym, C.-S. Liao, B. Berger, Isobase: a database of functionally related proteins across ppi networks, Nucleic acids research 39 (2010) D295–D300.
+(3) W. W. Zachary, “An information flow model for conflict and fission in small groups,” Journal of Anthropological Research, vol. 33, no. 4, pp. 452–473, 1977.
+
+(4) B. Zhao, P. Sen, and L. Getoor, “Entity and relationship labeling in affiliation networks,” in ICML Workshop on Statistical Network Analysis, 2006.
+
+(5) V. Krebs, http://www.orgnet.com/.
+
+(6) L. A. Adamic and N. Glance, “The political blogosphere and the 2004 us election: divided they blog,” in Proceedings of the 3rd International Workshop on Link Discovery. ACM, 2005, pp. 36–43.
+
+(7) P. Sen, G. Namata, M. Bilgic, L. Getoor, B. Galligher, and T. Eliassi-Rad, “Collective classification in network data,” AI Magazine, vol. 29, no. 3, pp. 93–106, 2008.
+
+(8) J. Yang and J. Leskovec, “Defining and evaluating network communities based on ground-truth,” in Proceedings of 12th International Conference on Data Mining. IEEE, 2012, pp. 745–754.
 
 ### Example dataset
 - Karate dataset
