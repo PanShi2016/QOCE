@@ -1,0 +1,5 @@
+Algorithms, F1, Conductance, CommNum, CommSize, Alltime
+BigClam   0.357   0.656   9   3.444   0.660
+CFinder   0.439   0.603   3   4.667   0.043
+DEMON   0.510   1.000   1   32.000   0.664
+NISE   0.750   0.132   2   16.000   13.219
