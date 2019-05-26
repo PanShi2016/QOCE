@@ -61,6 +61,9 @@ alpha: a parameter controls quadratic optimization (default: 0.2)
 $ cd baseline_codes
 $ sh complile-all.sh
 $ sh run.sh
+$ cd processCode
+$ matlab
+$ getResults
 ```
 
 ## Announcements
