@@ -11,6 +11,7 @@ f = 0.5*alpha*ones(n,1);
 lb = y; % yi >= 1/length(startPoints)
 ub = ones(1,n);
 
-v = quadprog(H,f,[],[],[],[],lb,[]); % default algorithm 'interior-point-convex'
+options = optimoptions('quadprog', 'Display', 'off');
+v = quadprog(H,f,[],[],[],[],lb,[],[],options); % default algorithm 'interior-point-convex'
 
 end

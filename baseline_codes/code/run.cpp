@@ -56,11 +56,11 @@ void runAlgorithm(string algo_name)
         BigClamComm();  
 	else if("DEMON" == algo_name)
 		DEMONComm();
-	else if("CFinder" == algo_name)
-		CFinderComm();
     else if("NISE" == algo_name)
         NISEComm();   
-	else
+	else if("DNMF" == algo_name)
+        DNMFComm();
+    else
 		cout << "no such algorithm called " << algo_name << endl;
 }
 

@@ -3,7 +3,7 @@ function [] = getResults()
 
 dataPath = '../../example/Karate/';
 
-algorithms = {'BigClam','CFinder','DEMON','NISE'};
+algorithms = {'BigClam','DEMON','NISE','DNMF'};
 
 dataPathandName = [dataPath,'graph.pairs'];
 truthPathandName = [dataPath,'community.txt'];
