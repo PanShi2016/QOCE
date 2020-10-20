@@ -3,7 +3,7 @@ void DEMONComm()
 	struct timeval start,end;
     	gettimeofday(&start,NULL);
 
-	systemCall("python " + config["DEMON_Dir"] + "launch.py "+config["DATA_DIR"]+config["INSTANCE_NAME"]);
+	systemCall("python2 " + config["DEMON_Dir"] + "launch.py "+config["DATA_DIR"]+config["INSTANCE_NAME"]);
 	systemCall("mv DEMON.gen "+config["RESULT_DIR"]);
 
 	gettimeofday(&end,NULL);
@@ -15,25 +15,6 @@ void DEMONComm()
     	otime.close();
 	
 	systemCall("rm ./Demon_time.txt");
-}
-
-void CFinderComm()
-{
-	systemCall("rm -r "+config["TMP_DIR"]); 
-	struct timeval start,end;
-    	gettimeofday(&start,NULL);
-	
-  	systemCall(config["CFinder_Dir"] + "CFinder_commandline64 -i "+config["DATA_DIR"]+config["INSTANCE_NAME"]+ " -l "+config["CFinder_Dir"]+"licence.txt -o "+config["TMP_DIR"]+" -k "+config["CFinder_k"]);
-
-	gettimeofday(&end,NULL);
-	double span = end.tv_sec-start.tv_sec + (end.tv_usec - start.tv_usec)/1000000.0;
-    	ofstream otime;
-    	otime.open((config["RESULT_DIR"]+"Total_Time.txt").c_str(), ios::out|ios::app);
-    	otime <<"CFinder"<<"\t"<<span<<endl;
-    	otime.close();
-	systemCall(config["CFinder_Dir"] + "CFtrans "+config["TMP_DIR"]+"k="+config["CFinder_k"]+"/communities "+config["RESULT_DIR"]+"CFinder.gen");
-	
-	systemCall("if [ ! -d " + config["TMP_DIR"]+" ]; then\n mkdir "+config["TMP_DIR"]+"\n fi");
 }
 
 void NISEComm()
@@ -74,3 +55,23 @@ void BigClamComm()
     	otime <<"BigClam"<<"\t"<<span<<endl;
     	otime.close();
 }
+
+
+void DNMFComm()
+{
+    struct timeval start,end;
+    gettimeofday(&start,NULL);
+    systemCall("cp "+config["DATA_DIR"]+config["INSTANCE_NAME"]+ " "+config["TMP_DIR"]);
+    string GraphFile=config["TMP_DIR"]+config["INSTANCE_NAME"];
+    systemCall("matlab -nodesktop -nosplash -r \"addpath('"+config["DNMF_Dir"]+"');DNMFRun('"+GraphFile+"',"+config["DNMF_alpha"]+","+config["DNMF_beta"]+","+config["DNMF_gamma"]+","+config["DNMF_k"]+","+config["DNMF_IT"]+","+config["DNMF_OT"]+");exit\"");
+    systemCall("cd ../..");
+    gettimeofday(&end,NULL);
+    double span = end.tv_sec-start.tv_sec + (end.tv_usec - start.tv_usec)/1000000.0;
+    ofstream otime;
+    otime.open((config["RESULT_DIR"]+"Total_Time.txt").c_str(), ios::out|ios::app);
+    otime <<"DNMF"<<"\t"<<span<<endl;
+    otime.close();
+    systemCall("mv DNMF.gen "+config["RESULT_DIR"]+"DNMF.gen");
+}
+
+

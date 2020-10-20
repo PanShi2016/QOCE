@@ -48,8 +48,7 @@ class Demon(object):
             percentage = float(actual * 100)/total_nodes
 
             if (int(percentage) % 1) == 0:
-                print 'Ego-network analyzed: %d/100 (communities identified: %d)' % (
-                    percentage, len(all_communities))
+                print ('Ego-network analyzed: %d/100 (communities identified: %d)'%(percentage, len(all_communities)))
             actual += 1
 
             #ego_minus_ego
