@@ -1,3 +1,0 @@
-F1, Conductance, CommNum, CommSize, Alltime
-				
-0.971	0.160	24.000	16.000	0.246
